@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
 
 public interface Client extends AutoCloseable {
 
-    Status put(String ky, Object object) throws IOException;
+    Status put(String key, Object object) throws IOException;
 
     Status put(String key, Object object, Integer ttl, TimeUnit timeUnit) throws IOException;
 
